@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title></title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .form-login {
+        height: 100vh;
+        display: flex;
+      }
+      .form-left {
+        flex: 1;
+        background-color: #1D1C65;
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        overflow: hidden;
+      }
+      .form-left::after {
+        content: "";
+        width: 350px;
+        height: 350px;
+        background-color: #26256f;
+        position: absolute;
+        top: -50%;
+        right: -50%;
+        border-radius: 50%;
+      }
+      .form-left::before {
+        content: "";
+        width: 350px;
+        height: 350px;
+        background-color: #26256f;
+        position: absolute;
+        left: -50%;
+        bottom: -50%;
+        border-radius: 50%;
+      }
+  
+      .form-left a {
+        text-decoration: none;
+        color: white;
+      }
+      .logo {
+        display: flex;
+        flex: 1.5;
+      }
+      .logo h1 {
+        font-style: italic;
+        margin: auto;
+      }
+      .logo-image {
+        width: 40px;
+        height: 40px;
+        background-color: #fff;
+        border-radius: 3px;
+        display: flex;
+      }
+
+      .logo p {
+        color: white;
+        font-size: 1.2rem;
+        line-height: 45px;
+        padding-left: 5px;
+      }
+      .form-right {
+        flex: 2;
+        background-color: #fff;
+      }
+      .text {
+        flex: 3;
+      }
+      .text h1 {
+        color: #fff;
+        font-size: 1.35rem;
+        margin-bottom: 20px;
+      }
+      .text p {
+        color: #aaa;
+        margin-bottom: 20px;
+      }
+      .scroll span {
+        width: 20px;
+        height: 2px;
+        background-color: #aaa;
+        display: inline-block;
+        margin-right: 5px;
+        margin-bottom: 20px;
+      }
+      .scroll span:nth-child(2) {
+        background-color: #fff;
+      }
+      .social-media i {
+        color: white;
+        font-size: .7rem;
+        padding-right: 10px;
+      }
+      footer {
+        display: flex;
+        flex: 1;
+        align-items: flex-end;
+        z-index: 2;
+      }
+      footer a {
+        font-size: .6rem;
+        padding-right: 12px;
+        align-items: bottom;
+      }
+      .form-right {
+        display: flex;
+      }
+      
+      .form-right form {
+        width: 50%;
+         margin: auto;
+      }
+      .form-right h2 {
+      padding-bottom: 5px;
+      }
+      .form-right p {
+        font-size: .70rem;
+        color: #aaa;
+        padding-bottom: 10px;
+      }
+      .empass {
+        font-size: .60rem;
+        font-weight: bold;
+      }
+      #email, #password {
+        width: 100%;
+        outline: none;
+        border: 1px solid #ccc;
+        padding: 9px;
+        border-radius: 4px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+      }
+      #email::placeholder, #password::placeholder {
+        color: #acacac;
+        font-size: .50rem;
+      }
+      .pusing  {
+        display: flex;
+        justify-content: space-between;
+      }
+      input#agree {
+        width: 11px;
+        height: 11px;
+      }
+      .agree {
+        color: #333;
+        font-size: .70rem;
+      }
+      form a {
+        text-decoration: none;
+        color: #000;
+        font-size: .71rem;
+        padding-top: 6px;
+      }
+      form .signin {
+        width: 100%;
+        background-color: midnightblue;
+        border: none;
+        outline: none;
+        color: #fff;
+        padding: 7px;
+        font-size: .7rem
+      }
+      form .signup {
+        width: 100%;
+        background: none;
+        padding: 7px;
+        color: #666;
+        border: 1px solid #ddd;
+        margin-top: 7px;
+        font-size: .7rem;
+      }
+    </style>
+</head>
+
+<body>
+  <div class="form-login">
+    
+    <div class="form-left">
+      
+      <div class="logo">
+        <div class="logo-image">
+          <h1>N</h1>
+        </div>
+        <p>Near</p>
+      </div>
+      
+      <div class="text">
+        <h1>Are you looking for a job? there are lots job available here sure suits you</h1>
+        <p>Immediately check your dream career oppurtunity here</p>
+        <div class="scroll">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="social-media">
+          <a href="">
+            <i class="fa fa-facebook"></i>
+          </a>
+          <a href="">
+            <i class="fa fa-twitter"></i>
+          </a>
+          <a href="">
+            <i class="fa fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+      <footer>
+        <a href="">Privacy Policy</a>
+        <a href="">Contact</a>
+        <a href="">©2020 Near Job</a>
+      </footer>
+      
+    </div>
+    
+    <div class="form-right">
+      
+      <form>
+        
+        <h2>Welcome Back</h2>
+      <p>Let's sign in to your account</p>
+      
+        <label for="email" class="empass">Email Address</label>
+        <br>
+        <input type="email" id="email" placeholder="yourmail@gmail.com">
+        <br>
+        <label for="password" class="empass">Password</label>
+        <br>
+        <input type="password" id="password" placeholder="***********">
+        <br>
+        <div class="pusing">
+        <div class="pusing1">
+        <input type="checkbox" id="agree"><label for="agree" class="agree">I agree with rules</label>
+        </div>
+        <a href="">Forgotten Password?</a>
+        </div>
+        <br>
+        <button type="submit" class="signin">Sign in</button>
+        <br>
+        <button type="button" class="signup">Sign up With Google</button>
+
+      </form>
+    </div>
+    
+  </div>
+
+</body>
+
+</html>
